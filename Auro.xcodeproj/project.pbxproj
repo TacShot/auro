@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F5638E6A88AC8DF0D09C7F8 /* AuroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F380AD2C2303AD178B92AB7 /* AuroApp.swift */; };
+		11B53EA8001DAFC851F2C6F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E0DAF09D45C01332B996AC /* AppDelegate.swift */; };
+		B644762436330123970AD6C9 /* AudioDeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E027C67F0A51BBFA92404E /* AudioDeviceManager.swift */; };
+		9ECF988CB1FAAF37B6E11EE8 /* AudioEffectsProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E99034D278C3B2C1EB874E /* AudioEffectsProcessor.swift */; };
+		C5602EBA3D954DCC5A217C31 /* AppAudioMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A147F2CDA3403E61B2656B /* AppAudioMonitor.swift */; };
+		22655EA0006785FC1EC87F67 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF55A1F92DB09F31713C9A21 /* AudioEngine.swift */; };
+		1BFE6C882E9274F25175A6F5 /* AudioDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E60453042EFD13D91C20B38 /* AudioDevice.swift */; };
+		BAE0EA62C53AB066F7EDBA5A /* AudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA8A4665F09515EAE25ACFC /* AudioApp.swift */; };
+		8B712AC5DBAFAB5A56F33CEE /* AudioRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61B55713E1EE2478C4AF100 /* AudioRoute.swift */; };
+		9DDE78B611CBA23E8D7CD202 /* EffectSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA8986E95A8EC8041493E9C /* EffectSettings.swift */; };
+		C6A5AA1937C362EFE96D3E28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EED8A2ED0BAE0359DC140A /* ContentView.swift */; };
+		7D990131F66B21A2083E50ED /* RoutingGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE5288725892C1BDEA6D392 /* RoutingGraphView.swift */; };
+		70D8E1FDD3B046B6F42852DC /* MixerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D82A960101D14F0D8CA71E4 /* MixerView.swift */; };
+		F458E8D834AE03E5EC77C076 /* EffectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF64D98D93D307069A45575 /* EffectsView.swift */; };
+		8139624898A349ADA4ED5613 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A48F4CE5EDCAA60D410E3 /* SettingsView.swift */; };
+		0AF4AEA81CED51226B6D2D71 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77A2B0BCB458F9D0B516F03 /* MenuBarView.swift */; };
+		25FADE3EFC7E27B8A6337F9F /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B111CDE20E16E74C10DF5EA0 /* SettingsStore.swift */; };
+		99810209AD4FE3320BC122AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F02208A1E6A99468703A4E /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F380AD2C2303AD178B92AB7 /* AuroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuroApp.swift"; sourceTree = "<group>"; };
+		B7E0DAF09D45C01332B996AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate.swift"; sourceTree = "<group>"; };
+		49E027C67F0A51BBFA92404E /* AudioDeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AudioDeviceManager.swift"; sourceTree = "<group>"; };
+		81E99034D278C3B2C1EB874E /* AudioEffectsProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AudioEffectsProcessor.swift"; sourceTree = "<group>"; };
+		B2A147F2CDA3403E61B2656B /* AppAudioMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppAudioMonitor.swift"; sourceTree = "<group>"; };
+		BF55A1F92DB09F31713C9A21 /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AudioEngine.swift"; sourceTree = "<group>"; };
+		3E60453042EFD13D91C20B38 /* AudioDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AudioDevice.swift"; sourceTree = "<group>"; };
+		0FA8A4665F09515EAE25ACFC /* AudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AudioApp.swift"; sourceTree = "<group>"; };
+		C61B55713E1EE2478C4AF100 /* AudioRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AudioRoute.swift"; sourceTree = "<group>"; };
+		BBA8986E95A8EC8041493E9C /* EffectSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EffectSettings.swift"; sourceTree = "<group>"; };
+		B5EED8A2ED0BAE0359DC140A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView.swift"; sourceTree = "<group>"; };
+		2BE5288725892C1BDEA6D392 /* RoutingGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutingGraphView.swift"; sourceTree = "<group>"; };
+		3D82A960101D14F0D8CA71E4 /* MixerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MixerView.swift"; sourceTree = "<group>"; };
+		6BF64D98D93D307069A45575 /* EffectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EffectsView.swift"; sourceTree = "<group>"; };
+		B21A48F4CE5EDCAA60D410E3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsView.swift"; sourceTree = "<group>"; };
+		D77A2B0BCB458F9D0B516F03 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuBarView.swift"; sourceTree = "<group>"; };
+		B111CDE20E16E74C10DF5EA0 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsStore.swift"; sourceTree = "<group>"; };
+		58F02208A1E6A99468703A4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		967A6155625E5F7CD9A4CC95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A97C29AD63741CF438998CE6 /* Auro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29B2D46AA747A59804D46E1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5928955287B8089ED2177128 = {
+			isa = PBXGroup;
+			children = (
+				095FEE2E633C50D24407F2D6 /* Auro */,
+				BF7A2D27A78D590BDEF15AF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF7A2D27A78D590BDEF15AF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A97C29AD63741CF438998CE6 /* Auro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		095FEE2E633C50D24407F2D6 /* Auro */ = {
+			isa = PBXGroup;
+			children = (
+				1F380AD2C2303AD178B92AB7 /* AuroApp.swift */,
+				B7E0DAF09D45C01332B996AC /* AppDelegate.swift */,
+				58F02208A1E6A99468703A4E /* Assets.xcassets */,
+				967A6155625E5F7CD9A4CC95 /* Info.plist */,
+				B452940829D20353CA3AEC80 /* Audio */,
+				CA608C0B22E7B6F9B389BDDD /* Models */,
+				78EF4B0EA3FDA2A792BCF074 /* Views */,
+				33250EB94151AE7B521566A3 /* Settings */,
+			);
+			path = Auro;
+			sourceTree = "<group>";
+		};
+		B452940829D20353CA3AEC80 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				49E027C67F0A51BBFA92404E /* AudioDeviceManager.swift */,
+				81E99034D278C3B2C1EB874E /* AudioEffectsProcessor.swift */,
+				B2A147F2CDA3403E61B2656B /* AppAudioMonitor.swift */,
+				BF55A1F92DB09F31713C9A21 /* AudioEngine.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		CA608C0B22E7B6F9B389BDDD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3E60453042EFD13D91C20B38 /* AudioDevice.swift */,
+				0FA8A4665F09515EAE25ACFC /* AudioApp.swift */,
+				C61B55713E1EE2478C4AF100 /* AudioRoute.swift */,
+				BBA8986E95A8EC8041493E9C /* EffectSettings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		78EF4B0EA3FDA2A792BCF074 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5EED8A2ED0BAE0359DC140A /* ContentView.swift */,
+				2BE5288725892C1BDEA6D392 /* RoutingGraphView.swift */,
+				3D82A960101D14F0D8CA71E4 /* MixerView.swift */,
+				6BF64D98D93D307069A45575 /* EffectsView.swift */,
+				B21A48F4CE5EDCAA60D410E3 /* SettingsView.swift */,
+				D77A2B0BCB458F9D0B516F03 /* MenuBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		33250EB94151AE7B521566A3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B111CDE20E16E74C10DF5EA0 /* SettingsStore.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		952894648086F689713245FA /* Auro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F707ED8CFBC457F7F618ECA6 /* Build configuration list for PBXNativeTarget "Auro" */;
+			buildPhases = (
+				E7209FB05162B7572F88D05E /* Sources */,
+				29B2D46AA747A59804D46E1F /* Frameworks */,
+				66F8606E9F0A136E2228EBCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Auro;
+			packageProductDependencies = (
+			);
+			productName = Auro;
+			productReference = A97C29AD63741CF438998CE6 /* Auro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					952894648086F689713245FA = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 7A97A35160987A8F39536D2C /* Build configuration list for PBXProject "Auro" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5928955287B8089ED2177128;
+			productsGroup = BF7A2D27A78D590BDEF15AF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				952894648086F689713245FA /* Auro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66F8606E9F0A136E2228EBCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99810209AD4FE3320BC122AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7209FB05162B7572F88D05E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F5638E6A88AC8DF0D09C7F8 /* AuroApp.swift in Sources */,
+				11B53EA8001DAFC851F2C6F0 /* AppDelegate.swift in Sources */,
+				B644762436330123970AD6C9 /* AudioDeviceManager.swift in Sources */,
+				9ECF988CB1FAAF37B6E11EE8 /* AudioEffectsProcessor.swift in Sources */,
+				C5602EBA3D954DCC5A217C31 /* AppAudioMonitor.swift in Sources */,
+				22655EA0006785FC1EC87F67 /* AudioEngine.swift in Sources */,
+				1BFE6C882E9274F25175A6F5 /* AudioDevice.swift in Sources */,
+				BAE0EA62C53AB066F7EDBA5A /* AudioApp.swift in Sources */,
+				8B712AC5DBAFAB5A56F33CEE /* AudioRoute.swift in Sources */,
+				9DDE78B611CBA23E8D7CD202 /* EffectSettings.swift in Sources */,
+				C6A5AA1937C362EFE96D3E28 /* ContentView.swift in Sources */,
+				7D990131F66B21A2083E50ED /* RoutingGraphView.swift in Sources */,
+				70D8E1FDD3B046B6F42852DC /* MixerView.swift in Sources */,
+				F458E8D834AE03E5EC77C076 /* EffectsView.swift in Sources */,
+				8139624898A349ADA4ED5613 /* SettingsView.swift in Sources */,
+				0AF4AEA81CED51226B6D2D71 /* MenuBarView.swift in Sources */,
+				25FADE3EFC7E27B8A6337F9F /* SettingsStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8EE6B6ADC095CDC56BE16A9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C25F4F6540DF31069317F7C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5C1FCF821166A8E947DC58DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSET_CATALOG_COMPILER_OPTIMIZATION = space;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Auro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tacshot.auro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIPPED_SOURCES = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				ASSDEF = "$(inherited)";
+			};
+			name = Debug;
+		};
+		D8A34C63742B602B66E1CD36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSET_CATALOG_COMPILER_OPTIMIZATION = space;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Auro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tacshot.auro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIPPED_SOURCES = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				ASSDEF = "$(inherited)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A97A35160987A8F39536D2C /* Build configuration list for PBXProject "Auro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EE6B6ADC095CDC56BE16A9E /* Debug */,
+				C25F4F6540DF31069317F7C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F707ED8CFBC457F7F618ECA6 /* Build configuration list for PBXNativeTarget "Auro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C1FCF821166A8E947DC58DE /* Debug */,
+				D8A34C63742B602B66E1CD36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}
