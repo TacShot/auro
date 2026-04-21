@@ -74,9 +74,7 @@ final class AudioEffectsProcessor {
             return
         }
         eq.globalGain = 0
-        // Rebuild bands if count changed
-        let bandCount = s.eqBands.count
-        // AVAudioUnitEQ bands are fixed at init time; we map as many as we can
+        // AVAudioUnitEQ bands are fixed at init time; map as many as we can
         for (i, band) in s.eqBands.enumerated() {
             guard i < eq.bands.count else { break }
             let b = eq.bands[i]
@@ -90,7 +88,6 @@ final class AudioEffectsProcessor {
         for i in s.eqBands.count..<eq.bands.count {
             eq.bands[i].bypass = true
         }
-        _ = bandCount // suppress unused warning
     }
 
     private func avFilterType(_ type: EQBandType) -> AVAudioUnitEQFilterType {

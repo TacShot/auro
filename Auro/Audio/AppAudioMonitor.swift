@@ -57,7 +57,9 @@ final class AppAudioMonitor: ObservableObject {
             }
         }
 
-        // Simulate level meters with random values for UI demonstration
+        // TODO: Replace with actual CoreAudio process-tap level metering
+        // (requires macOS 14.2+ CATapDescription / AudioHardwareCreateProcessTap API).
+        // Simulated values are used here for UI demonstration on earlier OS versions.
         for i in updated.indices {
             updated[i].peakLevel = updated[i].isMuted ? 0 : Float.random(in: 0.1...0.9)
         }
