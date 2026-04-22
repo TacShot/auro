@@ -86,12 +86,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 private struct AboutView: View {
     var body: some View {
         VStack(spacing: 16) {
-            Image(systemName: "waveform.circle.fill")
+            Image("AuroLogo")
                 .resizable()
                 .frame(width: 72, height: 72)
-                .foregroundStyle(
-                    LinearGradient(colors: [.cyan, .purple], startPoint: .topLeading, endPoint: .bottomTrailing)
-                )
+                .clipShape(RoundedRectangle(cornerRadius: 16))
             Text("Auro")
                 .font(.largeTitle.bold())
             Text("Version 1.0.0 (1)")
