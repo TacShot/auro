@@ -3,6 +3,7 @@ import SwiftUI
 
 // MARK: - AppDelegate
 
+@MainActor
 final class AppDelegate: NSObject, NSApplicationDelegate {
 
     private var statusItem: NSStatusItem?
