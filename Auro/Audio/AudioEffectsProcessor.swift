@@ -1,5 +1,6 @@
 import Foundation
 import AVFoundation
+import AudioToolbox
 
 // MARK: - AudioEffectsProcessor
 
@@ -20,7 +21,7 @@ final class AudioEffectsProcessor {
     private let pitch     = AVAudioUnitTimePitch()
     private let dynamics  = AVAudioUnitEffect(
         audioComponentDescription: AudioComponentDescription(
-            componentType: kAudioUnitType_Dynamics,
+            componentType: kAudioUnitType_Effect,
             componentSubType: kAudioUnitSubType_DynamicsProcessor,
             componentManufacturer: kAudioUnitManufacturer_Apple,
             componentFlags: 0, componentFlagsMask: 0))
@@ -98,7 +99,7 @@ final class AudioEffectsProcessor {
         case .highShelf: return .highShelf
         case .lowPass:   return .lowPass
         case .bandPass:  return .bandPass
-        case .notch:     return .notch
+        case .notch:     return .bandStop
         }
     }
 

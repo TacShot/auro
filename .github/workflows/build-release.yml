@@ -1,0 +1,43 @@
+name: Build and Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag (e.g. v1.0.0)"
+        required: false
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-release:
+    runs-on: macos-14
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build and package
+        run: bash dist/build.sh --configuration Release --output dist/output
+
+      - name: Upload zip to release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tag="${{ github.event.inputs.tag }}"
+          if [[ -z "$tag" ]]; then
+            if [[ "${GITHUB_REF_TYPE}" != "tag" ]]; then
+              echo "Release tag not provided. Set the workflow input 'tag'." >&2
+              exit 1
+            fi
+            tag="${GITHUB_REF_NAME}"
+          fi
+
+          zip_path="dist/output/Auro-Release.zip"
+          if ! gh release view "$tag" >/dev/null 2>&1; then
+            gh release create "$tag" --title "$tag" --generate-notes
+          fi
+          gh release upload "$tag" "$zip_path" --clobber
