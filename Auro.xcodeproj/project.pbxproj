@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE4FA9914003DD0CBE4D53F0 /* AudioAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07268C0BD0CA745B8614DD /* AudioAppTests.swift */; };
+		97D2817E28341F207E06E42B /* AudioDeviceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DDEB2DB34A18DA3B3A9DE2 /* AudioDeviceTests.swift */; };
+		9956B80B93CE909FB58539F7 /* AudioRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371FE14A4196B9276A99198 /* AudioRouteTests.swift */; };
+		0F52603681FB88AC706CDB7F /* EffectSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C83D9B4D24A35E815373DC1 /* EffectSettingsTests.swift */; };
+		CD6CFDC4B71ABA5CFC88E3F4 /* AudioEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04515ECFA10E0975F867C2C /* AudioEngineTests.swift */; };
+		8413299C867B2E4EBE0629B7 /* SettingsStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1FC11157F2C65E0962299 /* SettingsStoreTests.swift */; };
+		938A98D3A55717B29D6FA6E1 /* AudioEffectsProcessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA6C5B4DE57F210FDA09830 /* AudioEffectsProcessorTests.swift */; };
+		BE3500D2685E6791C8447739 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B796AB836FF8C08B1C7A15 /* XCTest.framework */; };
 		0F5638E6A88AC8DF0D09C7F8 /* AuroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F380AD2C2303AD178B92AB7 /* AuroApp.swift */; };
 		11B53EA8001DAFC851F2C6F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E0DAF09D45C01332B996AC /* AppDelegate.swift */; };
 		B644762436330123970AD6C9 /* AudioDeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E027C67F0A51BBFA92404E /* AudioDeviceManager.swift */; };
@@ -48,6 +56,15 @@
 		58F02208A1E6A99468703A4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		967A6155625E5F7CD9A4CC95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A97C29AD63741CF438998CE6 /* Auro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F07268C0BD0CA745B8614DD /* AudioAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioAppTests.swift; sourceTree = "<group>"; };
+		23DDEB2DB34A18DA3B3A9DE2 /* AudioDeviceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDeviceTests.swift; sourceTree = "<group>"; };
+		4371FE14A4196B9276A99198 /* AudioRouteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRouteTests.swift; sourceTree = "<group>"; };
+		8C83D9B4D24A35E815373DC1 /* EffectSettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectSettingsTests.swift; sourceTree = "<group>"; };
+		E04515ECFA10E0975F867C2C /* AudioEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngineTests.swift; sourceTree = "<group>"; };
+		37D1FC11157F2C65E0962299 /* SettingsStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStoreTests.swift; sourceTree = "<group>"; };
+		0DA6C5B4DE57F210FDA09830 /* AudioEffectsProcessorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEffectsProcessorTests.swift; sourceTree = "<group>"; };
+		D6DEC5336498451F61B31649 /* AuroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B796AB836FF8C08B1C7A15 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6BD3F95A5CF220C8FC955D46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE3500D2685E6791C8447739 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				095FEE2E633C50D24407F2D6 /* Auro */,
+				F3E2200C8B5D756DA9695186 /* AuroTests */,
 				BF7A2D27A78D590BDEF15AF2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				A97C29AD63741CF438998CE6 /* Auro.app */,
+				D6DEC5336498451F61B31649 /* AuroTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +117,20 @@
 				33250EB94151AE7B521566A3 /* Settings */,
 			);
 			path = Auro;
+			sourceTree = "<group>";
+		};
+		F3E2200C8B5D756DA9695186 /* AuroTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F07268C0BD0CA745B8614DD /* AudioAppTests.swift */,
+				23DDEB2DB34A18DA3B3A9DE2 /* AudioDeviceTests.swift */,
+				4371FE14A4196B9276A99198 /* AudioRouteTests.swift */,
+				8C83D9B4D24A35E815373DC1 /* EffectSettingsTests.swift */,
+				E04515ECFA10E0975F867C2C /* AudioEngineTests.swift */,
+				37D1FC11157F2C65E0962299 /* SettingsStoreTests.swift */,
+				0DA6C5B4DE57F210FDA09830 /* AudioEffectsProcessorTests.swift */,
+			);
+			path = AuroTests;
 			sourceTree = "<group>";
 		};
 		B452940829D20353CA3AEC80 /* Audio */ = {
@@ -157,7 +198,43 @@
 			productReference = A97C29AD63741CF438998CE6 /* Auro.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9BB93AF200F1BC96B7416C5E /* AuroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70BB9D566CFA2F2F984DF679 /* Build configuration list for PBXNativeTarget "AuroTests" */;
+			buildPhases = (
+				3F474D9B44783786D57DD4A2 /* Sources */,
+				6BD3F95A5CF220C8FC955D46 /* Frameworks */,
+				24B40A23DACE5B0C0EA947A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D94239E09A09956FCA802D71 /* PBXTargetDependency */,
+			);
+			name = AuroTests;
+			productName = AuroTests;
+			productReference = D6DEC5336498451F61B31649 /* AuroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		1FD100D4C676B5871ECEEA4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 952894648086F689713245FA;
+			remoteInfo = Auro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXTargetDependency section */
+		D94239E09A09956FCA802D71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 952894648086F689713245FA /* Auro */;
+			targetProxy = 1FD100D4C676B5871ECEEA4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXProject section */
 		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
@@ -169,6 +246,10 @@
 				TargetAttributes = {
 					952894648086F689713245FA = {
 						CreatedOnToolsVersion = 15.0;
+					};
+					9BB93AF200F1BC96B7416C5E = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 952894648086F689713245FA;
 					};
 				};
 			};
@@ -186,6 +267,7 @@
 			projectRoot = "";
 			targets = (
 				952894648086F689713245FA /* Auro */,
+				9BB93AF200F1BC96B7416C5E /* AuroTests */,
 			);
 		};
 /* End PBXProject section */
@@ -227,6 +309,33 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section (AuroTests) */
+		24B40A23DACE5B0C0EA947A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section (AuroTests) */
+
+/* Begin PBXSourcesBuildPhase (AuroTests) section */
+		3F474D9B44783786D57DD4A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE4FA9914003DD0CBE4D53F0 /* AudioAppTests.swift in Sources */,
+				97D2817E28341F207E06E42B /* AudioDeviceTests.swift in Sources */,
+				9956B80B93CE909FB58539F7 /* AudioRouteTests.swift in Sources */,
+				0F52603681FB88AC706CDB7F /* EffectSettingsTests.swift in Sources */,
+				CD6CFDC4B71ABA5CFC88E3F4 /* AudioEngineTests.swift in Sources */,
+				8413299C867B2E4EBE0629B7 /* SettingsStoreTests.swift in Sources */,
+				938A98D3A55717B29D6FA6E1 /* AudioEffectsProcessorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase (AuroTests) section */
 
 /* Begin XCBuildConfiguration section */
 		8EE6B6ADC095CDC56BE16A9E /* Debug */ = {
@@ -363,6 +472,52 @@
 			};
 			name = Release;
 		};
+		44052A70C92D84FC0B05BE8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tacshot.auro.tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auro.app/Contents/MacOS/Auro";
+			};
+			name = Debug;
+		};
+		936DFF51A258A0087126F76A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tacshot.auro.tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auro.app/Contents/MacOS/Auro";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -380,6 +535,15 @@
 			buildConfigurations = (
 				5C1FCF821166A8E947DC58DE /* Debug */,
 				D8A34C63742B602B66E1CD36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70BB9D566CFA2F2F984DF679 /* Build configuration list for PBXNativeTarget "AuroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44052A70C92D84FC0B05BE8D /* Debug */,
+				936DFF51A258A0087126F76A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
