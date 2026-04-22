@@ -12,6 +12,26 @@ PROJECT="Auro.xcodeproj"
 OUTPUT_DIR="$(pwd)/dist/output"
 APP_NAME="Auro"
 
+# ---------- dependency checks ----------
+require_command() {
+    if ! command -v "$1" &>/dev/null; then
+        echo "Missing required command: $1" >&2
+        exit 1
+    fi
+}
+
+require_command xcodebuild
+require_command zip
+
+if ! xcode-select -p &>/dev/null; then
+    echo "Xcode Command Line Tools not configured. Run: xcode-select --install" >&2
+    exit 1
+fi
+
+echo "==> Xcode version"
+xcodebuild -version
+echo ""
+
 # ---------- argument parsing ----------
 while [[ $# -gt 0 ]]; do
     case "$1" in
