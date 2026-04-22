@@ -47,8 +47,8 @@ final class AudioDeviceTests: XCTestCase {
         XCTAssertEqual(device.displayName, "Living Room")
     }
 
-    func testDisplayNameEmptyCustomNameFallsBackToFactory() {
-        // customName is non-nil but empty - still overrides factory name
+    func testDisplayNameEmptyCustomNameReturnsEmpty() {
+        // customName is non-nil but empty - returns empty string (custom name takes precedence)
         let device = makeDevice(name: "Speakers", customName: "")
         XCTAssertEqual(device.displayName, "")
     }

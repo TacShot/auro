@@ -135,9 +135,16 @@ final class SettingsStoreTests: XCTestCase {
     func testRunInBackgroundDefaultsToTrue() {
         // Simulate loading with no stored value (fresh UserDefaults)
         let store = SettingsStore.shared
+        let previousValue = UserDefaults.standard.object(forKey: "runInBackground")
         UserDefaults.standard.removeObject(forKey: "runInBackground")
         store.load()
         XCTAssertTrue(store.runInBackground, "runInBackground should default to true")
+        // Restore
+        if let prev = previousValue {
+            UserDefaults.standard.set(prev, forKey: "runInBackground")
+        } else {
+            UserDefaults.standard.removeObject(forKey: "runInBackground")
+        }
     }
 
     func testThemePersistenceRoundTrip() {
